@@ -1,7 +1,19 @@
 import Button from "./Button"
 import { Link, Route, Routes } from "react-router-dom"
 import { ChevronLeft } from "lucide-react";
-import { ButtonGroup } from "@/components/ui/button-group";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+export function TabsLine() {
+  return (
+    <Tabs defaultValue="overview">
+      <TabsList variant="line">
+        <TabsTrigger value="overview">Overview</TabsTrigger>
+        <TabsTrigger value="analytics">Analytics</TabsTrigger>
+        <TabsTrigger value="reports">Reports</TabsTrigger>
+      </TabsList>
+    </Tabs>
+  )
+}
 
 
 function Home() {
@@ -28,8 +40,8 @@ function LinkAccount() {
       </section>
       <section>
         <ButtonGroup>
-          <Button variant="primary">Email</Button>
-          <Button variant="secondary">Celular</Button>
+          <SButton variant="outline" size="lg" className="px-12">Validar Email</SButton>
+          <SButton variant="outline" size="lg" className="px-12">Validar Celular</SButton>
         </ButtonGroup>
       </section>
       <input type="text" placeholder="Ingresa tu código de verificación" />
