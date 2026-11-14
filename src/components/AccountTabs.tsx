@@ -25,7 +25,7 @@ export function AccountTabs() {
               placeholder="Ingresa tu número de celular"
             />
           </div>
-          <div className="mt-4 w-full">
+          <div className="mt-4 w-full sm:w-1/2 flex">
             <Button>Continuar</Button>
           </div>
         </section>
@@ -34,6 +34,7 @@ export function AccountTabs() {
         <section className="flex flex-col items-center justify-center gap-2 py-10">
           <h2 className="text-lg font-semibold text-indigo-800">Escribe tu Email</h2>
           <p className=" text-sm font-light text-neutral-700 text-pretty text-center mb-5">Solo validaremos tus datos por motivos de seguridad</p>
+          {/* Input Group */}
           <div className="relative w-full sm:w-1/2">
             <Mail className="absolute left-3 top-2.5 text-indigo-500" />
             <input className="pl-12 w-full border border-indigo-700 rounded-md py-3 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-200 bg-white"
@@ -41,7 +42,8 @@ export function AccountTabs() {
               placeholder="Ingresa tu dirección de email"
             />
           </div>
-          <div className="mt-4 w-full">
+          {/* Buton continuar */}
+          <div className="mt-4 w-full sm:w-1/2">
             <Button>Continuar</Button>
           </div>
         </section>

@@ -13,7 +13,7 @@ interface ButtonProps {
 }
 
 function Button({ variant = "primary", children, to }: ButtonProps) {
-    const className = `${variantClasses[variant]} min-w-full font-bold py-3 px-6 rounded-4xl text-center`;
+    const className = `${variantClasses[variant]} w-full font-bold py-3 px-6 rounded-4xl text-center`;
 
     if (to) {
         return (
