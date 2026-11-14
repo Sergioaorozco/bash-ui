@@ -14,8 +14,16 @@ function Home() {
 
 function LinkAccount() {
   return (
-     <main className="bg-linear-to-b from-white to-[#DFCCFF] h-dvh w-full flex items-center flex-col justify-around gap-2">
-      <Link to="/account/link">Vincula tu cuenta</Link>
+     <main className="bg-linear-to-b from-white to-[#DFCCFF] h-dvh w-full flex items-center flex-col gap-2">
+      <section className="dom-wrapper mx-auto w-full px-5">
+        <nav className="flex justify-center w-full items-center py-8 relative">
+          <Link to="/" className="text-indigo-500 hover:text-indigo-700 font-bold absolute left-0">
+            Volver
+          </Link>
+          <p className="font-semibold text-center text-2xl text-indigo-800">Valida tu cuenta</p>
+        </nav>
+      </section>
+      <input type="text" placeholder="Ingresa tu código de verificación" />
     </main>
   )
 }
