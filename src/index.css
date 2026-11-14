@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.dom-wrapper {
+  max-inline-size: 1125px;
+}
