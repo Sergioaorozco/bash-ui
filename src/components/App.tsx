@@ -1,7 +1,7 @@
 import Button from "./Button"
 import { Link, Route, Routes } from "react-router-dom"
 import { ChevronLeft } from "lucide-react";
-import { ButtonGroup } from "@/components/ui/button-group"
+import { ButtonGroup } from "./ui/button-group";
 
 
 function Home() {
